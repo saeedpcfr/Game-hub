@@ -72,5 +72,10 @@ export interface Gamequery{
   genre:Genre|null;
   platform:Platform|null;
   sortOrder:string;
+  searchtext:string;
 
+}
+
+export interface searchProps{
+  onSearch:(searchText:string)=>void;
 }

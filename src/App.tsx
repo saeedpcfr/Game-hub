@@ -22,7 +22,8 @@ function App() {
       base:'1fr',
       lg:'200px 1fr'
      }}>
-      <GridItem area='nav' ><Navbar/></GridItem>
+      <GridItem area='nav' >
+        <Navbar onSearch={(searchtext)=>setGameQuery({...gameQuery,searchtext})}/></GridItem>
       <Show above="lg">
       <GridItem paddingX={5} area='aside'><GnereLits selectedGenre={gameQuery.genre} onSelectgenre={(genre)=>setGameQuery({...gameQuery,genre})}></GnereLits></GridItem>
       </Show>
