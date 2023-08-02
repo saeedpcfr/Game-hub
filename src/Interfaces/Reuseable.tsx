@@ -79,3 +79,4 @@ export interface Gamequery{
 export interface searchProps{
   onSearch:(searchText:string)=>void;
 }
+
