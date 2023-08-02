@@ -6,6 +6,11 @@ export interface Platform {
   slug: string;
 }
 
+export interface sortProps{
+  onSelectedSortOrder:(sortOrder : string)=> void;
+  sortOrder:string
+}
+
 export interface selectedGenre{
   onSelectgenre:(genre:Genre)=>void
   selectedGenre: Genre |null
@@ -66,5 +71,6 @@ export interface selectedPlatform{
 export interface Gamequery{
   genre:Genre|null;
   platform:Platform|null;
+  sortOrder:string;
 
 }
